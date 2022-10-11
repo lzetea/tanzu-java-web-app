@@ -9,3 +9,11 @@ management:
   endpoint:
     health:
       show-details: always
+  metrics:
+    export:
+      wavefront:
+        uri: proxy://10.0.146.142:2878
+wavefront:
+  application:
+    name: tanzu-web-app
+    service: tanzu-web-app
